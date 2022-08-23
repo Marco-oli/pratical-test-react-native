@@ -7,9 +7,15 @@ import {BookDetails} from '../screens/BookDetails';
 
 const Stack = createNativeStackNavigator();
 
-export const HomeStack = () => {
+export interface HomeStackProps {
+  Home: undefined;
+  Category: {category: string};
+  BookDetails: undefined;
+}
+
+export const HomeStack: React.FC<HomeStackProps> = () => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Category" component={Category} />
       <Stack.Screen name="BookDetails" component={BookDetails} />
