@@ -5,4 +5,5 @@ export const images = {
   micIcon: require('./micIcon.png'),
   perfilImage: require('./perfil.png'),
   searchIcon: require('./search.png'),
+  starIcon: require('./starIcon.png'),
 };
