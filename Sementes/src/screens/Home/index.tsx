@@ -55,8 +55,6 @@ export const Home = () => {
     [navigation],
   );
 
-  console.log(categories);
-
   return (
     <ScrollView style={styles.container}>
       <View style={styles.containerHeader}>
