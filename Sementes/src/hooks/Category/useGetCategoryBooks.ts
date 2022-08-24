@@ -1,9 +1,9 @@
 import {useState} from 'react';
-import {BookProps} from '../../interfaces/mainInterface';
+import {CategoryBooks} from '../../interfaces/mainInterface';
 import {api, api_key} from '../../services/api';
 
 export const useGetCategoryBooks = () => {
-  const [categoriesBooks, setCategoriesBooks] = useState<BookProps[]>([]);
+  const [categoriesBooks, setCategoriesBooks] = useState<CategoryBooks>();
   const [categoriesBooksError, setCategoriesBooksError] = useState(false);
   const [categoriesBooksLoading, setCategoriesBooksLoading] = useState(false);
 
