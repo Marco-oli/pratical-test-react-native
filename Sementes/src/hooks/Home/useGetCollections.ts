@@ -1,5 +1,5 @@
 import {useState} from 'react';
-import {BookProps} from '../../interfaces/bookInterface';
+import {BookProps} from '../../interfaces/mainInterface';
 import {api, api_key} from '../../services/api';
 
 export const useGetCollections = () => {
