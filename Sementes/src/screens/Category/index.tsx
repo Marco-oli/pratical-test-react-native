@@ -28,8 +28,6 @@ export const Category = () => {
     getCategoriesBooks(category.list_name_encoded);
   }, [category.list_name_encoded]);
 
-  console.log(categoriesBooks);
-
   return (
     <ScrollView style={styles.container}>
       <View style={styles.header}>
