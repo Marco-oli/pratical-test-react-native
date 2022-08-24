@@ -4,12 +4,13 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {Home} from '../screens/Home';
 import {Category} from '../screens/Category';
 import {BookDetails} from '../screens/BookDetails';
+import {CategoryProps} from '../interfaces/mainInterface';
 
 const Stack = createNativeStackNavigator();
 
 export interface HomeStackProps {
   Home: undefined;
-  Category: {category: string};
+  Category: {category: CategoryProps};
   BookDetails: undefined;
 }
 
